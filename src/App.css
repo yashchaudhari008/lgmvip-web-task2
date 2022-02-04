@@ -1,0 +1,78 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appHeader {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: var(--color2);
+}
+button {
+  background-color: var(--color3);
+  color: var(--color2);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+}
+button:disabled {
+  background-color: var(--color2);
+  color: gray;
+}
+.cardHolder {
+  width: 80%;
+  padding: 2rem;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.UserCard {
+  background-color: rgba(255, 255, 255, 0.08);
+  --nameColor: var(--color3);
+  --emailColor: var(--color2);
+
+  color: var(--color2);
+  width: 100%;
+  max-width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  transition: all 0.1s ease-out;
+}
+.UserCard:hover {
+  background-color: var(--color3);
+  --nameColor: white;
+  --emailColor: black;
+}
+.UserCard img {
+  width: 128px;
+  height: 128px;
+
+  border-radius: 50% 20%;
+  object-fit: cover;
+}
+.UserCard h2 {
+  margin: 0;
+  margin-top: 0.9rem;
+  color: var(--nameColor);
+}
+.UserCard p {
+  color: var(--emailColor);
+  margin-top: 0.2rem;
+}
+
+.appMessage {
+  margin-top: 0;
+  color: var(--color2);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
